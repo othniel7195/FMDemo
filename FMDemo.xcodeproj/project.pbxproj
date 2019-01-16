@@ -12,6 +12,10 @@
 		B930765121EE480C00E246D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B930765021EE480C00E246D0 /* Default-568h@2x.png */; };
 		B930765E21EE4B8400E246D0 /* FMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B930765D21EE4B8400E246D0 /* FMTabBar.m */; };
 		B930766121EE4CD400E246D0 /* UIView+FMLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B930766021EE4CD400E246D0 /* UIView+FMLayout.m */; };
+		B95DFC0D21EF69AC0029F157 /* FMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC0C21EF69AC0029F157 /* FMNavigationBar.m */; };
+		B95DFC1021EF6BDC0029F157 /* FMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC0F21EF6BDC0029F157 /* FMNavigationViewController.m */; };
+		B95DFC1321EF6E660029F157 /* FMMidPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC1221EF6E660029F157 /* FMMidPlayView.m */; };
+		B95DFC3821EF8DAE0029F157 /* CALayer+FMPauseAimate.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC3721EF8DAE0029F157 /* CALayer+FMPauseAimate.m */; };
 		B9D9DB2221EE30C8006573D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2021EE30C8006573D4 /* Main.storyboard */; };
 		B9D9DB2421EE30CD006573D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2321EE30CD006573D4 /* Assets.xcassets */; };
 		B9D9DB2721EE30CD006573D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */; };
@@ -27,6 +31,14 @@
 		B930765D21EE4B8400E246D0 /* FMTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTabBar.m; sourceTree = "<group>"; };
 		B930765F21EE4CD400E246D0 /* UIView+FMLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FMLayout.h"; sourceTree = "<group>"; };
 		B930766021EE4CD400E246D0 /* UIView+FMLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FMLayout.m"; sourceTree = "<group>"; };
+		B95DFC0B21EF69AC0029F157 /* FMNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMNavigationBar.h; sourceTree = "<group>"; };
+		B95DFC0C21EF69AC0029F157 /* FMNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMNavigationBar.m; sourceTree = "<group>"; };
+		B95DFC0E21EF6BDC0029F157 /* FMNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMNavigationViewController.h; sourceTree = "<group>"; };
+		B95DFC0F21EF6BDC0029F157 /* FMNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMNavigationViewController.m; sourceTree = "<group>"; };
+		B95DFC1121EF6E660029F157 /* FMMidPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMMidPlayView.h; sourceTree = "<group>"; };
+		B95DFC1221EF6E660029F157 /* FMMidPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMMidPlayView.m; sourceTree = "<group>"; };
+		B95DFC3621EF8DAE0029F157 /* CALayer+FMPauseAimate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+FMPauseAimate.h"; sourceTree = "<group>"; };
+		B95DFC3721EF8DAE0029F157 /* CALayer+FMPauseAimate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FMPauseAimate.m"; sourceTree = "<group>"; };
 		B9D9DB1721EE30C8006573D4 /* FMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D9DB2121EE30C8006573D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9D9DB2321EE30CD006573D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +62,6 @@
 				B930764921EE47F200E246D0 /* AppDelegate.h */,
 				B930764B21EE47F200E246D0 /* AppDelegate.m */,
 				B930764A21EE47F200E246D0 /* main.m */,
-				B930764C21EE47F200E246D0 /* Info.plist */,
 			);
 			path = AppSystem;
 			sourceTree = "<group>";
@@ -77,6 +88,8 @@
 		B930765521EE486200E246D0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B95DFC0E21EF6BDC0029F157 /* FMNavigationViewController.h */,
+				B95DFC0F21EF6BDC0029F157 /* FMNavigationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -86,6 +99,10 @@
 			children = (
 				B930765C21EE4B8400E246D0 /* FMTabBar.h */,
 				B930765D21EE4B8400E246D0 /* FMTabBar.m */,
+				B95DFC0B21EF69AC0029F157 /* FMNavigationBar.h */,
+				B95DFC0C21EF69AC0029F157 /* FMNavigationBar.m */,
+				B95DFC1121EF6E660029F157 /* FMMidPlayView.h */,
+				B95DFC1221EF6E660029F157 /* FMMidPlayView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +120,8 @@
 			children = (
 				B930765F21EE4CD400E246D0 /* UIView+FMLayout.h */,
 				B930766021EE4CD400E246D0 /* UIView+FMLayout.m */,
+				B95DFC3621EF8DAE0029F157 /* CALayer+FMPauseAimate.h */,
+				B95DFC3721EF8DAE0029F157 /* CALayer+FMPauseAimate.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -153,6 +172,7 @@
 				B930765321EE486200E246D0 /* Classes */,
 				B930764821EE47F200E246D0 /* AppSystem */,
 				B9D9DB2021EE30C8006573D4 /* Main.storyboard */,
+				B930764C21EE47F200E246D0 /* Info.plist */,
 				B9D9DB2321EE30CD006573D4 /* Assets.xcassets */,
 				B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */,
 			);
@@ -230,10 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95DFC3821EF8DAE0029F157 /* CALayer+FMPauseAimate.m in Sources */,
+				B95DFC1321EF6E660029F157 /* FMMidPlayView.m in Sources */,
 				B930765E21EE4B8400E246D0 /* FMTabBar.m in Sources */,
 				B930766121EE4CD400E246D0 /* UIView+FMLayout.m in Sources */,
+				B95DFC0D21EF69AC0029F157 /* FMNavigationBar.m in Sources */,
 				B930764E21EE47F200E246D0 /* AppDelegate.m in Sources */,
 				B930764D21EE47F200E246D0 /* main.m in Sources */,
+				B95DFC1021EF6BDC0029F157 /* FMNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
