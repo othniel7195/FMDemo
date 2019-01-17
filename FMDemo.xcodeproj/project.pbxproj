@@ -19,6 +19,7 @@
 		B9D9DB2221EE30C8006573D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2021EE30C8006573D4 /* Main.storyboard */; };
 		B9D9DB2421EE30CD006573D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2321EE30CD006573D4 /* Assets.xcassets */; };
 		B9D9DB2721EE30CD006573D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */; };
+		D54A5E4A21F038D800E17BBA /* FMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A5E4921F038D800E17BBA /* FMDeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		B9D9DB2121EE30C8006573D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9D9DB2321EE30CD006573D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D9DB2621EE30CD006573D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D54A5E4821F038D800E17BBA /* FMDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDeviceInfo.h; sourceTree = "<group>"; };
+		D54A5E4921F038D800E17BBA /* FMDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDeviceInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 		B930765721EE486200E246D0 /* FunctionModule */ = {
 			isa = PBXGroup;
 			children = (
+				D54A5E4721F038C800E17BBA /* Utils */,
 				B930765821EE486200E246D0 /* Category */,
 			);
 			path = FunctionModule;
@@ -177,6 +181,15 @@
 				B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */,
 			);
 			path = FMDemo;
+			sourceTree = "<group>";
+		};
+		D54A5E4721F038C800E17BBA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D54A5E4821F038D800E17BBA /* FMDeviceInfo.h */,
+				D54A5E4921F038D800E17BBA /* FMDeviceInfo.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +270,7 @@
 				B95DFC0D21EF69AC0029F157 /* FMNavigationBar.m in Sources */,
 				B930764E21EE47F200E246D0 /* AppDelegate.m in Sources */,
 				B930764D21EE47F200E246D0 /* main.m in Sources */,
+				D54A5E4A21F038D800E17BBA /* FMDeviceInfo.m in Sources */,
 				B95DFC1021EF6BDC0029F157 /* FMNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
