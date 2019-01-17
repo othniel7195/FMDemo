@@ -40,14 +40,6 @@ inline CGSize ScreenSize()
     self.barStyle = UIBarStyleBlack;
     
     self.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
-    
-    self.middlePlayView.centerX = self.centerX;
-    
-    if ([FMDeviceInfo isIphoneX]) {
-        self.middlePlayView.y = ScreenSize().height - self.middlePlayView.height - 10;
-    }else{
-        self.middlePlayView.y = ScreenSize().height - self.middlePlayView.height;
-    }
 }
 
 - (void)layoutSubviews
@@ -65,9 +57,46 @@ inline CGSize ScreenSize()
                 index ++;
             }
             CGFloat btnX = index * btnW;
+            subView.x = btnX;
+            subView.width = btnW;
+            subView.y = 5;
+            if ([FMDeviceInfo isIphoneX]) {
+                subView.height = self.height - 15;
+            }else{
+                subView.height = self.height - 5;
+            }
+            
+            index ++;
         }
     }
+    
+    self.middlePlayView.centerX = self.centerX;
+    if ([FMDeviceInfo isIphoneX]) {
+        self.middlePlayView.y = self.height - self.middlePlayView.height - 10;
+    }else{
+        self.middlePlayView.y = self.height - self.middlePlayView.height;
+    }
+    
 }
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    CGPoint pointMiddle = [self convertPoint:point toView:self.middlePlayView];
+    
+    CGPoint middleCenter = CGPointMake(32.5,32.5);
+    
+    CGFloat x2x = powf(fabs(pointMiddle.x - middleCenter.x),2);
+    CGFloat y2y = powf(fabs(pointMiddle.y - middleCenter.y), 2);
+    
+    CGFloat distance = sqrt(x2x + y2y);
+    
+    if (distance > 33) {
+        return NO;
+    }
+    
+    return YES;
+}
+
 
 - (FMMidPlayView *)middlePlayView
 {
