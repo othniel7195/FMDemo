@@ -10,11 +10,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+
 @interface FMTabBarController : UITabBarController
 
 + (instancetype)shareInstance;
 
-- (void)addChildViewController:(UIViewController *)childController normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName isRequiredNavController: (BOOL)isRequired;
++ (instancetype)tabbarAddChildVCs:(void(^)(FMTabBarController* tabbarVC))block;
+
+- (void)addChildViewController:(UIViewController *)childController
+                         title:(nullable NSString *)title
+               normalImageName: (NSString *)normalImageName
+             selectedImageName:(NSString *)selectedImageName
+       isRequiredNavController: (BOOL)isRequired;
 @end
 
 NS_ASSUME_NONNULL_END

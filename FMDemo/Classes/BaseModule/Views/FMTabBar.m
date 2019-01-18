@@ -11,7 +11,6 @@
 #import "UIView+FMLayout.h"
 #import "FMDeviceInfo.h"
 
-
 inline CGSize ScreenSize()
 {
     CGSize size = [UIScreen mainScreen].bounds.size;
@@ -31,7 +30,7 @@ inline CGSize ScreenSize()
     self = [super initWithFrame:frame];
     if (!self) return nil;
     
-    
+    [self stepUI];
     return self;
 }
 
@@ -39,7 +38,7 @@ inline CGSize ScreenSize()
     
     self.barStyle = UIBarStyleBlack;
     
-    self.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
+    self.backgroundImage = [[UIImage imageNamed:@"tabbar_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 10, 0) resizingMode:UIImageResizingModeStretch];
 }
 
 - (void)layoutSubviews
@@ -72,31 +71,15 @@ inline CGSize ScreenSize()
     
     self.middlePlayView.centerX = self.centerX;
     if ([FMDeviceInfo isIphoneX]) {
-        self.middlePlayView.y = self.height - self.middlePlayView.height - 10;
+        self.middlePlayView.y = self.height - self.middlePlayView.height - 33;
     }else{
         self.middlePlayView.y = self.height - self.middlePlayView.height;
     }
     
+    self.middlePlayView.fmMidPlayClickBlock = ^(BOOL playing) {
+        
+    };
 }
-
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
-{
-    CGPoint pointMiddle = [self convertPoint:point toView:self.middlePlayView];
-    
-    CGPoint middleCenter = CGPointMake(32.5,32.5);
-    
-    CGFloat x2x = powf(fabs(pointMiddle.x - middleCenter.x),2);
-    CGFloat y2y = powf(fabs(pointMiddle.y - middleCenter.y), 2);
-    
-    CGFloat distance = sqrt(x2x + y2y);
-    
-    if (distance > 33) {
-        return NO;
-    }
-    
-    return YES;
-}
-
 
 - (FMMidPlayView *)middlePlayView
 {
@@ -106,6 +89,25 @@ inline CGSize ScreenSize()
         _middlePlayView = midPlayView;
     }
     return _middlePlayView;
+}
+
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+ 
+    CGPoint tabbarPoint = [self convertPoint:point toView:self];
+    
+    if (tabbarPoint.y > 0 ) {
+        return YES;
+    }
+    
+    CGPoint middleViewPoint = [self convertPoint:point toView:self.middlePlayView];
+    if (middleViewPoint.y > 0) {
+        
+        return YES;
+    }
+    
+    return NO;
 }
 
 @end

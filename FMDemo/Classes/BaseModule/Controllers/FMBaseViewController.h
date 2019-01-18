@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FMNavigationViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FMBaseViewController : UIViewController

@@ -7,6 +7,8 @@
 //
 
 #import "Test1.h"
+#import "Test2.h"
+
 
 @interface Test1 ()
 
@@ -16,17 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 180, 100, 20)];
+    label.text = @"TEST1";
+    [self.view addSubview:label];
+    
+    self.view.userInteractionEnabled = YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    static BOOL isPlaying = NO;
+    
+    isPlaying = !isPlaying;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"playState" object:@(isPlaying)];
+    
+    [self.navigationController pushViewController:[Test2 new] animated:YES];
 }
-*/
 
 @end

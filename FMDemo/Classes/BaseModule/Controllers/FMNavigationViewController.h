@@ -14,4 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+static inline CGSize ScreenSize()
+{
+    return [UIScreen mainScreen].bounds.size;
+}
+
+
 NS_ASSUME_NONNULL_END

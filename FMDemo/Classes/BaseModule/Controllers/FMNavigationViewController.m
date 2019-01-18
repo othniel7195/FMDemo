@@ -19,10 +19,6 @@
 
 @end
 
-static inline CGSize ScreenSize()
-{
-    return [UIScreen mainScreen].bounds.size;
-}
 
 @implementation FMNavigationViewController
 
@@ -52,7 +48,8 @@ static inline CGSize ScreenSize()
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if (self.viewControllers.count > 1) {
+    
+    if (self.viewControllers.count > 0) {
         viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_back_n"] style:UIBarButtonItemStylePlain target:self action:@selector(popBack)];
         viewController.hidesBottomBarWhenPushed = YES;
     }
@@ -86,5 +83,6 @@ static inline CGSize ScreenSize()
     
     return YES;
 }
+
 
 @end

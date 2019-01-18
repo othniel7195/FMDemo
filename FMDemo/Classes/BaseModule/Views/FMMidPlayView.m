@@ -8,6 +8,7 @@
 
 #import "FMMidPlayView.h"
 #import "CALayer+FMPauseAimate.h"
+#import "UIButton+FMButton.h"
 
 @interface FMMidPlayView ()
 @property(nonatomic, strong)UIImageView *middlePlayImageVew;
@@ -84,6 +85,7 @@
 
 - (void)middleClick
 {
+    self.isPlaying = !self.isPlaying;
     if (self.fmMidPlayClickBlock) {
         self.fmMidPlayClickBlock(self.isPlaying);
     }
@@ -129,9 +131,9 @@
 {
     [self.middlePlayImageVew.layer removeAnimationForKey:@"playAnimation"];
     CABasicAnimation *playAnimate = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    playAnimate.fromValue = @0;
+    playAnimate.fromValue = @(0);
     playAnimate.toValue = @(M_PI * 2);
-    playAnimate.duration = 30;
+    playAnimate.duration = 30.f;
     playAnimate.repeatCount = MAXFLOAT;
     playAnimate.removedOnCompletion = NO;
     [self.middlePlayImageVew.layer addAnimation:playAnimate forKey:@"playAnimation"];

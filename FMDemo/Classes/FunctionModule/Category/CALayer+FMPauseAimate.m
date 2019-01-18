@@ -14,7 +14,7 @@
 - (void)pauseAnimate
 {
     CFTimeInterval pauseTime = [self convertTime:CACurrentMediaTime() toLayer:nil];
-    self.speed = 0.0;
+    self.speed = 0.f;
     self.timeOffset = pauseTime;
 }
 // 恢复动画
@@ -22,8 +22,8 @@
 {
     CFTimeInterval pauseTime = self.timeOffset;
     self.speed = 1.0;
-    self.beginTime = 0;
-    self.timeOffset = 0;
+    self.timeOffset = 0.f;
+    self.beginTime = 0.f;
     CFTimeInterval timeSincePause = [self convertTime:CACurrentMediaTime() toLayer:nil] - pauseTime;
     self.beginTime = timeSincePause;
 }
