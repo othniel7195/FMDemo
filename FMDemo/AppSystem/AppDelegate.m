@@ -19,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
     FMTabBarController *tabbarVC = [FMTabBarController tabbarAddChildVCs:^(FMTabBarController * _Nonnull tabbarVC) {
         
         [tabbarVC addChildViewController:[Test1 new] title:nil normalImageName:@"tabbar_find_h" selectedImageName:@"tabbar_find_h" isRequiredNavController:YES];

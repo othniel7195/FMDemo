@@ -21,6 +21,9 @@
     [self.view addSubview:label];
 }
 
-
+- (BOOL)needMiddlePlayView
+{
+    return YES;
+}
 
 @end

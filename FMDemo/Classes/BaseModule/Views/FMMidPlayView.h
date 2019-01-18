@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FMMidPlayView : UIView
 
 + (instancetype)shareInstance;
-
++ (instancetype)middleView;
 @property(nonatomic, strong)UIImage *middleImg;
 @property(nonatomic, assign)BOOL isPlaying;
 

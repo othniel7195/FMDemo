@@ -21,7 +21,6 @@
 		B95DFC4221F0F0310029F157 /* UIImage+FMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC4121F0F0310029F157 /* UIImage+FMImage.m */; };
 		B95DFC4821F0F5D20029F157 /* Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC4721F0F5D20029F157 /* Test1.m */; };
 		B95DFC4B21F0F5F90029F157 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC4A21F0F5F80029F157 /* TestView.m */; };
-		B9D9DB2221EE30C8006573D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2021EE30C8006573D4 /* Main.storyboard */; };
 		B9D9DB2421EE30CD006573D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2321EE30CD006573D4 /* Assets.xcassets */; };
 		B9D9DB2721EE30CD006573D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */; };
 		D54A5E4A21F038D800E17BBA /* FMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A5E4921F038D800E17BBA /* FMDeviceInfo.m */; };
@@ -58,7 +57,6 @@
 		B95DFC4921F0F5F80029F157 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		B95DFC4A21F0F5F80029F157 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		B9D9DB1721EE30C8006573D4 /* FMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9D9DB2121EE30C8006573D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9D9DB2321EE30CD006573D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D9DB2621EE30CD006573D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D54A5E4821F038D800E17BBA /* FMDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDeviceInfo.h; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 			children = (
 				B930765321EE486200E246D0 /* Classes */,
 				B930764821EE47F200E246D0 /* AppSystem */,
-				B9D9DB2021EE30C8006573D4 /* Main.storyboard */,
 				B930764C21EE47F200E246D0 /* Info.plist */,
 				B9D9DB2321EE30CD006573D4 /* Assets.xcassets */,
 				B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */,
@@ -287,7 +284,6 @@
 				B9D9DB2721EE30CD006573D4 /* LaunchScreen.storyboard in Resources */,
 				B9D9DB2421EE30CD006573D4 /* Assets.xcassets in Resources */,
 				B930765121EE480C00E246D0 /* Default-568h@2x.png in Resources */,
-				B9D9DB2221EE30C8006573D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,14 +316,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B9D9DB2021EE30C8006573D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9D9DB2121EE30C8006573D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

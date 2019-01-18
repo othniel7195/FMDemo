@@ -13,6 +13,7 @@
 #import <objc/runtime.h>
 #import "UIView+FMLayout.h"
 #import "FMDeviceInfo.h"
+#import "UIImage+FMImage.h"
 
 
 @interface FMNavigationViewController ()<UIGestureRecognizerDelegate>
@@ -50,18 +51,19 @@
 {
     
     if (self.viewControllers.count > 0) {
-        viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_back_n"] style:UIBarButtonItemStylePlain target:self action:@selector(popBack)];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage originImageWithName:@"btn_back_n"] style:UIBarButtonItemStylePlain target:self action:@selector(popBack)];
         viewController.hidesBottomBarWhenPushed = YES;
     }
     [super pushViewController:viewController animated:animated];
     
-    if ([viewController isMemberOfClass:[FMBaseViewController class]]) {
+    if ([viewController isKindOfClass:[FMBaseViewController class]]) {
         FMBaseViewController *baseVC = (FMBaseViewController *)viewController;
         if ([baseVC needMiddlePlayView]) {
-            FMMidPlayView *middlePlayView = [FMMidPlayView shareInstance];
-            middlePlayView.centerX = (ScreenSize().width - middlePlayView.width) * 0.5;
+            //不能用单例的视图 ，单例的已经加载到其他视图上了
+            FMMidPlayView *middlePlayView = [FMMidPlayView middleView];
+            middlePlayView.centerX = viewController.view.centerX;
             if ([FMDeviceInfo isIphoneX]) {
-                middlePlayView.y = ScreenSize().height - middlePlayView.height - 10;
+                middlePlayView.y = ScreenSize().height - middlePlayView.height - 15;
             }else{
                 middlePlayView.y = ScreenSize().height - middlePlayView.height;
             }

@@ -22,7 +22,7 @@
 
 - (BOOL)needMiddlePlayView
 {
-    return YES;
+    return NO;
 }
 
 
