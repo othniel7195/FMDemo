@@ -11,9 +11,9 @@
 #import "FMBaseViewController.h"
 #import "FMMidPlayView.h"
 #import <objc/runtime.h>
-#import "UIView+FMLayout.h"
+#import "UIView+ZFLayout.h"
 #import "FMDeviceInfo.h"
-#import "UIImage+FMImage.h"
+#import "UIImage+ZFImage.h"
 
 
 @interface FMNavigationViewController ()<UIGestureRecognizerDelegate>

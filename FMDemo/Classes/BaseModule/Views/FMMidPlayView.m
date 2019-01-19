@@ -7,7 +7,7 @@
 //
 
 #import "FMMidPlayView.h"
-#import "CALayer+FMPauseAimate.h"
+#import "CALayer+ZFPauseAimate.h"
 #import "UIButton+FMButton.h"
 
 @interface FMMidPlayView ()

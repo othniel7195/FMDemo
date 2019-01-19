@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F4DDA7DE1026136E18E49DA /* Pods_FMDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707F8EBDA6F8BA74CA08D80 /* Pods_FMDemo.framework */; };
 		B930764D21EE47F200E246D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B930764A21EE47F200E246D0 /* main.m */; };
 		B930764E21EE47F200E246D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B930764B21EE47F200E246D0 /* AppDelegate.m */; };
 		B930765121EE480C00E246D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B930765021EE480C00E246D0 /* Default-568h@2x.png */; };
 		B930765E21EE4B8400E246D0 /* FMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B930765D21EE4B8400E246D0 /* FMTabBar.m */; };
-		B930766121EE4CD400E246D0 /* UIView+FMLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B930766021EE4CD400E246D0 /* UIView+FMLayout.m */; };
 		B95DFC0D21EF69AC0029F157 /* FMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC0C21EF69AC0029F157 /* FMNavigationBar.m */; };
 		B95DFC1021EF6BDC0029F157 /* FMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC0F21EF6BDC0029F157 /* FMNavigationViewController.m */; };
 		B95DFC1321EF6E660029F157 /* FMMidPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC1221EF6E660029F157 /* FMMidPlayView.m */; };
-		B95DFC3821EF8DAE0029F157 /* CALayer+FMPauseAimate.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC3721EF8DAE0029F157 /* CALayer+FMPauseAimate.m */; };
 		B95DFC3C21F0E9AD0029F157 /* FMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC3B21F0E9AD0029F157 /* FMBaseViewController.m */; };
 		B95DFC3F21F0ED420029F157 /* FMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC3E21F0ED420029F157 /* FMTabBarController.m */; };
-		B95DFC4221F0F0310029F157 /* UIImage+FMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC4121F0F0310029F157 /* UIImage+FMImage.m */; };
 		B95DFC4821F0F5D20029F157 /* Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC4721F0F5D20029F157 /* Test1.m */; };
 		B95DFC4B21F0F5F90029F157 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DFC4A21F0F5F80029F157 /* TestView.m */; };
+		B9C9C2F321F3670C005B19A9 /* UIButton+FMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9C2F221F3670C005B19A9 /* UIButton+FMButton.m */; };
 		B9D9DB2421EE30CD006573D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2321EE30CD006573D4 /* Assets.xcassets */; };
 		B9D9DB2721EE30CD006573D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9DB2521EE30CD006573D4 /* LaunchScreen.storyboard */; };
 		D54A5E4A21F038D800E17BBA /* FMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A5E4921F038D800E17BBA /* FMDeviceInfo.m */; };
-		D54A5E4D21F1A41B00E17BBA /* UIButton+FMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A5E4C21F1A41B00E17BBA /* UIButton+FMButton.m */; };
 		D54A5E5021F1A92C00E17BBA /* Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A5E4F21F1A92C00E17BBA /* Test2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0707F8EBDA6F8BA74CA08D80 /* Pods_FMDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57600A65A32B30704A51888D /* Pods-FMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDemo/Pods-FMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B930764921EE47F200E246D0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B930764A21EE47F200E246D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B930764B21EE47F200E246D0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,33 +36,28 @@
 		B930765021EE480C00E246D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B930765C21EE4B8400E246D0 /* FMTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMTabBar.h; sourceTree = "<group>"; };
 		B930765D21EE4B8400E246D0 /* FMTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTabBar.m; sourceTree = "<group>"; };
-		B930765F21EE4CD400E246D0 /* UIView+FMLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FMLayout.h"; sourceTree = "<group>"; };
-		B930766021EE4CD400E246D0 /* UIView+FMLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FMLayout.m"; sourceTree = "<group>"; };
 		B95DFC0B21EF69AC0029F157 /* FMNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMNavigationBar.h; sourceTree = "<group>"; };
 		B95DFC0C21EF69AC0029F157 /* FMNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMNavigationBar.m; sourceTree = "<group>"; };
 		B95DFC0E21EF6BDC0029F157 /* FMNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMNavigationViewController.h; sourceTree = "<group>"; };
 		B95DFC0F21EF6BDC0029F157 /* FMNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMNavigationViewController.m; sourceTree = "<group>"; };
 		B95DFC1121EF6E660029F157 /* FMMidPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMMidPlayView.h; sourceTree = "<group>"; };
 		B95DFC1221EF6E660029F157 /* FMMidPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMMidPlayView.m; sourceTree = "<group>"; };
-		B95DFC3621EF8DAE0029F157 /* CALayer+FMPauseAimate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+FMPauseAimate.h"; sourceTree = "<group>"; };
-		B95DFC3721EF8DAE0029F157 /* CALayer+FMPauseAimate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FMPauseAimate.m"; sourceTree = "<group>"; };
 		B95DFC3A21F0E9AD0029F157 /* FMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMBaseViewController.h; sourceTree = "<group>"; };
 		B95DFC3B21F0E9AD0029F157 /* FMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMBaseViewController.m; sourceTree = "<group>"; };
 		B95DFC3D21F0ED420029F157 /* FMTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMTabBarController.h; sourceTree = "<group>"; };
 		B95DFC3E21F0ED420029F157 /* FMTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTabBarController.m; sourceTree = "<group>"; };
-		B95DFC4021F0F0310029F157 /* UIImage+FMImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FMImage.h"; sourceTree = "<group>"; };
-		B95DFC4121F0F0310029F157 /* UIImage+FMImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FMImage.m"; sourceTree = "<group>"; };
 		B95DFC4621F0F5D20029F157 /* Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1.h; sourceTree = "<group>"; };
 		B95DFC4721F0F5D20029F157 /* Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1.m; sourceTree = "<group>"; };
 		B95DFC4921F0F5F80029F157 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		B95DFC4A21F0F5F80029F157 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		B9C9C2F121F3670C005B19A9 /* UIButton+FMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FMButton.h"; sourceTree = "<group>"; };
+		B9C9C2F221F3670C005B19A9 /* UIButton+FMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FMButton.m"; sourceTree = "<group>"; };
 		B9D9DB1721EE30C8006573D4 /* FMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D9DB2321EE30CD006573D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D9DB2621EE30CD006573D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEFA45BE015FA4EA2A00FF4E /* Pods-FMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDemo/Pods-FMDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D54A5E4821F038D800E17BBA /* FMDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDeviceInfo.h; sourceTree = "<group>"; };
 		D54A5E4921F038D800E17BBA /* FMDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDeviceInfo.m; sourceTree = "<group>"; };
-		D54A5E4B21F1A41B00E17BBA /* UIButton+FMButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FMButton.h"; sourceTree = "<group>"; };
-		D54A5E4C21F1A41B00E17BBA /* UIButton+FMButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FMButton.m"; sourceTree = "<group>"; };
 		D54A5E4E21F1A92C00E17BBA /* Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2.h; sourceTree = "<group>"; };
 		D54A5E4F21F1A92C00E17BBA /* Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,12 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4DDA7DE1026136E18E49DA /* Pods_FMDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20AAF61FD478BC6BDA2A0144 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57600A65A32B30704A51888D /* Pods-FMDemo.debug.xcconfig */,
+				BEFA45BE015FA4EA2A00FF4E /* Pods-FMDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		816906A5744749B7B6B04AEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0707F8EBDA6F8BA74CA08D80 /* Pods_FMDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B930764821EE47F200E246D0 /* AppSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		B930765421EE486200E246D0 /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
+				B9C9C2F021F3670C005B19A9 /* FMCategorys */,
 				B930765521EE486200E246D0 /* Controllers */,
 				B930765621EE486200E246D0 /* Views */,
 			);
@@ -137,24 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				D54A5E4721F038C800E17BBA /* Utils */,
-				B930765821EE486200E246D0 /* Category */,
 			);
 			path = FunctionModule;
-			sourceTree = "<group>";
-		};
-		B930765821EE486200E246D0 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				B930765F21EE4CD400E246D0 /* UIView+FMLayout.h */,
-				B930766021EE4CD400E246D0 /* UIView+FMLayout.m */,
-				B95DFC3621EF8DAE0029F157 /* CALayer+FMPauseAimate.h */,
-				B95DFC3721EF8DAE0029F157 /* CALayer+FMPauseAimate.m */,
-				B95DFC4021F0F0310029F157 /* UIImage+FMImage.h */,
-				B95DFC4121F0F0310029F157 /* UIImage+FMImage.m */,
-				D54A5E4B21F1A41B00E17BBA /* UIButton+FMButton.h */,
-				D54A5E4C21F1A41B00E17BBA /* UIButton+FMButton.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		B95DFC4321F0F4C60029F157 /* BusinessModule */ = {
@@ -186,12 +184,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B9C9C2F021F3670C005B19A9 /* FMCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9C2F121F3670C005B19A9 /* UIButton+FMButton.h */,
+				B9C9C2F221F3670C005B19A9 /* UIButton+FMButton.m */,
+			);
+			path = FMCategorys;
+			sourceTree = "<group>";
+		};
 		B9D9DB0E21EE30C8006573D4 = {
 			isa = PBXGroup;
 			children = (
 				B930765021EE480C00E246D0 /* Default-568h@2x.png */,
 				B9D9DB1921EE30C8006573D4 /* FMDemo */,
 				B9D9DB1821EE30C8006573D4 /* Products */,
+				20AAF61FD478BC6BDA2A0144 /* Pods */,
+				816906A5744749B7B6B04AEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9D9DB2D21EE30CD006573D4 /* Build configuration list for PBXNativeTarget "FMDemo" */;
 			buildPhases = (
+				B9419F485319DAA966BB743D /* [CP] Check Pods Manifest.lock */,
 				B9D9DB1321EE30C8006573D4 /* Sources */,
 				B9D9DB1421EE30C8006573D4 /* Frameworks */,
 				B9D9DB1521EE30C8006573D4 /* Resources */,
+				3CB12C417215F36B65683D2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +300,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CB12C417215F36B65683D2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FMDemo/Pods-FMDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZFCategoryFramework/ZFCategoryFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFCategoryFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMDemo/Pods-FMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9419F485319DAA966BB743D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9D9DB1321EE30C8006573D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,14 +346,11 @@
 			files = (
 				B95DFC4B21F0F5F90029F157 /* TestView.m in Sources */,
 				B95DFC3C21F0E9AD0029F157 /* FMBaseViewController.m in Sources */,
-				D54A5E4D21F1A41B00E17BBA /* UIButton+FMButton.m in Sources */,
-				B95DFC3821EF8DAE0029F157 /* CALayer+FMPauseAimate.m in Sources */,
 				D54A5E5021F1A92C00E17BBA /* Test2.m in Sources */,
-				B95DFC4221F0F0310029F157 /* UIImage+FMImage.m in Sources */,
 				B95DFC1321EF6E660029F157 /* FMMidPlayView.m in Sources */,
 				B930765E21EE4B8400E246D0 /* FMTabBar.m in Sources */,
-				B930766121EE4CD400E246D0 /* UIView+FMLayout.m in Sources */,
 				B95DFC0D21EF69AC0029F157 /* FMNavigationBar.m in Sources */,
+				B9C9C2F321F3670C005B19A9 /* UIButton+FMButton.m in Sources */,
 				B95DFC3F21F0ED420029F157 /* FMTabBarController.m in Sources */,
 				B930764E21EE47F200E246D0 /* AppDelegate.m in Sources */,
 				B930764D21EE47F200E246D0 /* main.m in Sources */,
@@ -441,6 +488,7 @@
 		};
 		B9D9DB2E21EE30CD006573D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57600A65A32B30704A51888D /* Pods-FMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +505,7 @@
 		};
 		B9D9DB2F21EE30CD006573D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEFA45BE015FA4EA2A00FF4E /* Pods-FMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
