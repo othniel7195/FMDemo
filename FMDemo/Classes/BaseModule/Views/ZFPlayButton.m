@@ -1,15 +1,14 @@
 //
-//  UIButton+FMButton.m
+//  ZFPlayButton.m
 //  FMDemo
 //
-//  Created by zhao.feng on 2019/1/18.
-//  Copyright © 2019年 zf. All rights reserved.
+//  Created by zf on 2019/1/21.
+//  Copyright © 2019 zf. All rights reserved.
 //
 
-#import "UIButton+FMButton.h"
+#import "ZFPlayButton.h"
 
-@implementation UIButton (FMButton)
-
+@implementation ZFPlayButton
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {

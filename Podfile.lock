@@ -1,16 +1,23 @@
 PODS:
-  - ZFCategoryFramework (0.1.0)
+  - ZFBaseFramework (0.1.0):
+    - ZFBaseFramework/ZFCategoryFramework (= 0.1.0)
+    - ZFBaseFramework/ZFFoundationFramework (= 0.1.0)
+    - ZFBaseFramework/ZFUISegmentBar (= 0.1.0)
+  - ZFBaseFramework/ZFCategoryFramework (0.1.0)
+  - ZFBaseFramework/ZFFoundationFramework (0.1.0)
+  - ZFBaseFramework/ZFUISegmentBar (0.1.0):
+    - ZFBaseFramework/ZFCategoryFramework
 
 DEPENDENCIES:
-  - ZFCategoryFramework
+  - ZFBaseFramework
 
 SPEC REPOS:
   https://github.com/othniel7195/ZFBaseFrameworkSpecs.git:
-    - ZFCategoryFramework
+    - ZFBaseFramework
 
 SPEC CHECKSUMS:
-  ZFCategoryFramework: d1f0f7259312fb0d4a6b57e2b9e3dbfa2d6be421
+  ZFBaseFramework: d1133105c0214efa486fb9e09b7ff79209c7c554
 
-PODFILE CHECKSUM: 2ed567d16a1600ae2be0a57794c237e0acf9b54f
+PODFILE CHECKSUM: 3bb713b000e080fc4f298e0f6b8600f34e4617c7
 
 COCOAPODS: 1.5.3

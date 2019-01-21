@@ -12,7 +12,7 @@
 #import "FMMidPlayView.h"
 #import <objc/runtime.h>
 #import "UIView+ZFLayout.h"
-#import "FMDeviceInfo.h"
+#import "ZFDeviceInfo.h"
 #import "UIImage+ZFImage.h"
 
 
@@ -62,7 +62,7 @@
             //不能用单例的视图 ，单例的已经加载到其他视图上了
             FMMidPlayView *middlePlayView = [FMMidPlayView middleView];
             middlePlayView.centerX = viewController.view.centerX;
-            if ([FMDeviceInfo isIphoneX]) {
+            if ([ZFDeviceInfo isIphoneX]) {
                 middlePlayView.y = ScreenSize().height - middlePlayView.height - 15;
             }else{
                 middlePlayView.y = ScreenSize().height - middlePlayView.height;

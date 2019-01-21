@@ -12,7 +12,7 @@
 #import "FMNavigationViewController.h"
 #import "FMBaseViewController.h"
 #import "FMMidPlayView.h"
-#import "FMDeviceInfo.h"
+#import "ZFDeviceInfo.h"
 #import "UIView+ZFLayout.h"
 
 @interface FMTabBarController ()<UITabBarControllerDelegate>
@@ -87,7 +87,7 @@
         if ([baseVC needMiddlePlayView]) {
             FMMidPlayView *middlePlayView = [FMMidPlayView shareInstance];
             middlePlayView.centerX = (ScreenSize().width - middlePlayView.width) * 0.5;
-            if ([FMDeviceInfo isIphoneX]) {
+            if ([ZFDeviceInfo isIphoneX]) {
                 middlePlayView.y = ScreenSize().height - middlePlayView.height - 33;
             }else{
                 middlePlayView.y = ScreenSize().height - middlePlayView.height;

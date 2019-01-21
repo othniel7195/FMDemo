@@ -7,6 +7,6 @@ platform :ios, '12.0'
 target 'FMDemo' do
     use_frameworks!
 
-pod 'ZFCategoryFramework'
-
+pod 'ZFBaseFramework'
+pod 'ZFBaseFramework' :path=>''
 end

@@ -9,7 +9,7 @@
 #import "FMTabBar.h"
 #import "FMMidPlayView.h"
 #import "UIView+ZFLayout.h"
-#import "FMDeviceInfo.h"
+#import "ZFDeviceInfo.h"
 
 inline CGSize ScreenSize()
 {
@@ -59,7 +59,7 @@ inline CGSize ScreenSize()
             subView.x = btnX;
             subView.width = btnW;
             subView.y = 5;
-            if ([FMDeviceInfo isIphoneX]) {
+            if ([ZFDeviceInfo isIphoneX]) {
                 subView.height = self.height - 15;
             }else{
                 subView.height = self.height - 5;
@@ -70,7 +70,7 @@ inline CGSize ScreenSize()
     }
     
     self.middlePlayView.centerX = self.centerX;
-    if ([FMDeviceInfo isIphoneX]) {
+    if ([ZFDeviceInfo isIphoneX]) {
         self.middlePlayView.y = self.height - self.middlePlayView.height - 33;
     }else{
         self.middlePlayView.y = self.height - self.middlePlayView.height;

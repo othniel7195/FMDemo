@@ -8,11 +8,11 @@
 
 #import "FMMidPlayView.h"
 #import "CALayer+ZFPauseAimate.h"
-#import "UIButton+FMButton.h"
+#import "ZFPlayButton.h"
 
 @interface FMMidPlayView ()
 @property(nonatomic, strong)UIImageView *middlePlayImageVew;
-@property(nonatomic, strong)UIButton *playBtn;
+@property(nonatomic, strong)ZFPlayButton *playBtn;
 @end
 
 @implementation FMMidPlayView
@@ -64,7 +64,7 @@
     [self addSubview:zxy_icon];
     self.middlePlayImageVew = zxy_icon;
     
-    UIButton *tabbar_np_play = [UIButton buttonWithType:UIButtonTypeCustom];
+    ZFPlayButton *tabbar_np_play = [ZFPlayButton buttonWithType:UIButtonTypeCustom];
     [tabbar_np_play setImage:[UIImage imageNamed:@"tabbar_np_play"] forState:UIControlStateNormal];
     tabbar_np_play.frame = CGRectMake(10, 10, 45, 45);
     [self addSubview:tabbar_np_play];
